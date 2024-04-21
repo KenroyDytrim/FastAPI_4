@@ -8,8 +8,7 @@ from datetime import datetime
 from public.db import create_tables, index_builder
 from contextlib import asynccontextmanager
 
-# создание таблиц и заполнение их начальными данными
-create_tables()
+# заполнение таблиц начальными данными
 index_builder()
 
 # занесение информации о включении и выключении в log.txt

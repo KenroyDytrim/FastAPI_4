@@ -10,4 +10,6 @@ RUN python -m pip install --progress-bar off -r requirements.txt
 
 COPY . .
 
+RUN alembic upgrade head
+
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
